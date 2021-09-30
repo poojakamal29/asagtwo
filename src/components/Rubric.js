@@ -18,7 +18,7 @@ function Rubric() {
           <ul className='rubric__items'>
 
             <RubricItem 
-              text = ""
+              text = "Patient is a 45M with no significant PMHx presenting with back pain that started 3 weeks ago after attempting to catch a heavy object mid-air. His pain is located bilaterally on his lower back which was initially a 3/10 that has progressively worsened to a 6/10 which he describes as 'knife-like'. It does not radiate anywhere and he has been taking ibuprofen and acetaminophen without relief. He states that resting and laying down improved the pain but activity worsens the pain. He is concerned about prostate mets because his father passed 6 months ago from prostate cancer and had back pain related to mets. He denies any sweating, night sweats, chills, fevers. Denies any nausea or vomiting.  Denies any difficulty urinating, shortness of breath, or suprapubic pain. "
             />
           </ul>
 
@@ -33,9 +33,7 @@ function Rubric() {
           <RubricItem 
               text='Began after moving furniture *'
           />
-          <RubricItem 
-              text='Worse with flexion and rotation'
-          />
+
           <RubricItem 
               text='Trying Motrin and Tylenol with slight relief *'
           />
@@ -48,7 +46,20 @@ function Rubric() {
           <RubricItem 
               text='Father with history of prostate cancer with spine mets'
             />
+ 
           <RubricItem 
+              text=' No fever *'
+          />
+ 
+
+          </ul>
+
+          <ul className='nocredit'>
+          <h3> Items NOT Found in Note: </h3>
+          <RubricItem 
+              text='Worse with flexion and rotation'
+          />
+         <RubricItem 
               text='No radiation to the legs'
           />
           <RubricItem 
@@ -62,10 +73,7 @@ function Rubric() {
           <RubricItem 
               text='No LE weakness, numbness or tingling *'
           />
-          <RubricItem 
-              text=' No fever *'
-          />
-          <RubricItem 
+         <RubricItem 
               text='No past medical history of note'
           />
           <RubricItem 
@@ -80,13 +88,6 @@ function Rubric() {
           <RubricItem 
               text='No weight loss'
           />             
-
-          </ul>
-
-          <ul className='nocredit'>
-          <h3> Items NOT Found in Note: </h3>
-
-
  
           </ul>
         </div>
@@ -105,7 +106,7 @@ function Rubric() {
         <h1>Your Physical Exam Answer</h1>
           <ul className='rubric__items'>
             <RubricItem
-            text = ''           
+            text = 'Positive straight leg test; Positive back tenderness with palpation; Denies any neuropathies or tingling of lower extremities; Normal bilateral lower reflexes  '           
             />
           </ul>
 
@@ -120,13 +121,24 @@ function Rubric() {
           <RubricItem 
               text='Pain on paraspinal palpation *'
           />
-          <RubricItem 
-              text='Motor strength 5/5 in LE *'
-          />
+
           <RubricItem 
               text=' Reflexes 2/4 in LE bilaterally'
           />
+ 
+ 
           <RubricItem 
+              text='Babinski down going bilaterally'
+          />
+
+          </ul>
+
+          <ul className='nocredit'>
+          <h3> Items NOT Found in Note: </h3>
+          <RubricItem 
+              text='Motor strength 5/5 in LE *'
+          />
+         <RubricItem 
               text=' Sensory intact in LE bilaterally'
           />
           <RubricItem 
@@ -135,20 +147,12 @@ function Rubric() {
           <RubricItem 
               text='Limited range of motion of the back'
           />
-          <RubricItem 
+         <RubricItem 
               text=' No vertebral tenderness *'
-          />
-          <RubricItem 
-              text='Babinski down going bilaterally'
           />
           <RubricItem
               text='Straight leg raise'
           />
-          </ul>
-
-          <ul className='nocredit'>
-          <h3> Items NOT Found in Note: </h3>
-
           </ul>
         </div>
       </div>
@@ -167,7 +171,13 @@ function Rubric() {
 
           <ul className='rubric__items'>
             <RubricItem
-            text = ''
+            text = 'Disk herniation '
+            />
+                        <RubricItem
+            text = 'Compression fracture  '
+            />
+                        <RubricItem
+            text = 'Muscle strain '
             />
           </ul>
 
@@ -184,8 +194,16 @@ function Rubric() {
 
           <ul className='credit'>
             <h3> Items Found in Note: </h3>
-
             <RubricItem
+              text='None found'
+            />    
+
+
+          </ul>
+
+          <ul className='nocredit'>
+          <h3> Items NOT Found in Note: </h3>
+          <RubricItem
               text='Low back strain'
             />    
 
@@ -196,12 +214,6 @@ function Rubric() {
             <RubricItem 
               text='Cancer with spinal mets'
             />
-
-          </ul>
-
-          <ul className='nocredit'>
-          <h3> Items NOT Found in Note: </h3>
-
 
           </ul>
         </div>
@@ -221,20 +233,11 @@ function Rubric() {
         </h4>
         <ul className='rubric__items'>
           <RubricItem className = 'length'
-              text=''
+              text='x ray '
           />
           <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />
-          <RubricItem 
-              text=''
-          />          
+              text='MRI'
+          />  
           </ul>
 
 
